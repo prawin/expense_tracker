@@ -1,0 +1,50 @@
+body{
+  background-color:white;
+  font:13.34px helvetica,arial,freesans,clean,sans-serif;
+  margin:0px;
+}
+
+#main_container{
+  width:100%;
+}
+#header_bar{
+  background-color:#CECECE;
+  height:50px;
+}
+
+#header_bar .nav_bar{
+  padding-top:10px;
+}
+
+#logo{
+  float:left;
+  padding-left:10%;
+}
+#header_links{
+  float:right;
+  padding-right:10%;
+}
+#container{
+  width:80%;
+  border:1px solid black;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:10px;
+}
+#container .nav_bar{
+  height:40px;
+  background-color:#CECDCD;
+}
+
+#container .nav_bar a{
+  padding:5px;
+  background-color:#000000;
+  color:#FFFFFF;
+  float:right;
+  margin:5px;
+}
+
+#container .nav_bar a.selected{
+  background-color:#0E3F0C;
+}
+
