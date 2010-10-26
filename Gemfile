@@ -10,6 +10,8 @@ gem 'devise'
 gem 'haml'
 gem 'jquery-rails'
 gem 'dynamic_form'
+gem 'hpricot'
+gem 'ruby_parser'
 
 # Use unicorn as the web server
 # gem 'unicorn'

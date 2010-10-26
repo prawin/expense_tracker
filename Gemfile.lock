@@ -39,6 +39,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.0.22)
+    hpricot (0.8.2)
     i18n (0.4.1)
     jquery-rails (0.2.4)
       rails (~> 3.0)
@@ -68,6 +69,9 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
+    ruby_parser (2.0.5)
+      sexp_processor (~> 3.0)
+    sexp_processor (3.0.5)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
@@ -82,6 +86,8 @@ DEPENDENCIES
   devise
   dynamic_form
   haml
+  hpricot
   jquery-rails
   mysql2
   rails (= 3.0.1)
+  ruby_parser

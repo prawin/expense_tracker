@@ -2,7 +2,7 @@
   #logo
     This is the header bar
   #header_links
-    = link_to_function "Profile", :class => 'selected'
-    |
     = link_to_function "Profile"
+    |
+    = link_to "Logout", destroy_user_session_url
 
