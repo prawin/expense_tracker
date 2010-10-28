@@ -1,0 +1,6 @@
+- if @expenses.blank?
+  %strong
+    No expenses added for selectd month
+- else
+  = render :partial => "expense", :collection => @expenses
+

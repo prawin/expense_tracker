@@ -13,11 +13,12 @@ module ApplicationHelper
           $('#new_expense').validate({
           debug: true,
           rules: {
-          'expense[expense_date]': {required: true },  //added this
+            'expense[expense_date]': {required: true },
+            'expense[amount]': {required: true }
           }
           });
         });
-    }
+      }
   end
 end
 

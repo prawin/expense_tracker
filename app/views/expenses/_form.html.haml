@@ -1,15 +1,20 @@
 %script
   = jquery_date_field('expense_expense_date')
-  = jquery_validate_expense
-- form_for @expense do |f|
+  /= jquery_validate_expense
+
+= form_for @expense do |f|
   = f.label :expense_date
   = f.text_field :expense_date
   %br
   = f.label :amount
   = f.text_field :amount
   %br
+  = f.label :category_id
+  = f.select :category_id, Category.all.collect{|c| [c.name, c.id]}
+  %br
   = f.label :description
   = f.text_field :description
   %br
-  = f.submit "Saves"
+
+  = f.submit "Save"
 

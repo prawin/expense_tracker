@@ -1,0 +1,10 @@
+.ex_cat
+  %span{:style => "background-color:##{expense.category.color_code};"}
+    = expense.category.name
+.ex_date
+  = expense.expense_date
+.ex_amount
+  = expense.amount
+.ex_desc
+  = expense.description
+
