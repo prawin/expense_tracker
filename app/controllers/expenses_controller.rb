@@ -3,7 +3,7 @@ class ExpensesController < ApplicationController
     expense_month = Date.today.month#params[:expense_month] || Date.today
     expense_year = Date.today.year
     @expense = Expense.new
-    @expenses = Expense.all
+    @expenses = current_user.expenses.all(:order => "expense_date DESC")
   end
 
   def create

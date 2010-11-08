@@ -107,6 +107,7 @@ body{
 
 .clear{
   clear:both;
+  float:none !important;
 }
 .labl{
   font-weight:bold;
