@@ -66,3 +66,55 @@ body{
   min-height:250px;
   padding:5px;
 }
+.expense{
+  margin:5px;
+}
+
+.expense div{
+  float:left;  
+  width:120px;
+}
+.ex_cat span{
+  display:inline-block;
+  min-width:60px;
+  padding:2px 4px;
+  text-align:center;
+}
+.ex_date{
+  width:150px;  
+  padding:2px 4px;
+}
+.ex_date input, .ex_amount input{
+  width:120px;
+  padding:1px;
+  border:1px solid #CECECE;
+}
+
+.ex_amount{
+  text-align:right;
+  width:150px;
+  padding:2px 4px;
+}
+.ex_desc{
+  width:300px !important; 
+  padding:2px 4px;
+}
+.ex_desc input{
+  width:280px;
+  padding:1px;
+  border:1px solid #CECECE;
+}
+
+.clear{
+  clear:both;
+}
+.labl{
+  font-weight:bold;
+  text-align:left;   
+}
+.error{
+  color:red;
+}
+input.error{
+  border:1px solid red; 
+}

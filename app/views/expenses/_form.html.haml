@@ -1,20 +1,28 @@
 %script
   = jquery_date_field('expense_expense_date')
-  /= jquery_validate_expense
+  = jquery_validate_expense
 
-= form_for @expense do |f|
-  = f.label :expense_date
-  = f.text_field :expense_date
-  %br
-  = f.label :amount
-  = f.text_field :amount
-  %br
-  = f.label :category_id
-  = f.select :category_id, Category.all.collect{|c| [c.name, c.id]}
-  %br
-  = f.label :description
-  = f.text_field :description
-  %br
+= form_for @expense, :remote => true do |f|
+  .expense{:style => "margin:0px;"}
+    .ex_cat.labl
+      Category
+    .ex_date.labl
+      Date
+    .ex_amount.labl
+      Amount
+    .ex_desc.labl
+      Descriptioon
+  .clear
+  .expense{:style => "margin:0px;"}
+    .ex_cat
+      = f.select :category_id, Category.all.collect{|c| [c.name, c.id]}
+    .ex_date
+      = f.text_field :expense_date
+    .ex_amount
+      = f.text_field :amount
+    .ex_desc
+      = f.text_field :description
 
   = f.submit "Save"
+.clear
 
