@@ -1,0 +1,3 @@
+$('form#new_expense')[0].reset();
+$("#expenses").html("<%= escape_javascript(render(current_user.expenses))%>");
+
