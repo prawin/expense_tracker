@@ -1,13 +1,13 @@
 SalCalNew::Application.routes.draw do
   devise_for :users, :path => "usuarios", :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'register', :sign_up => 'cmon_let_me_in' }
-
+  match '/expense_calender(/:year(/:month))' => 'expense_calender#index', :as => :expense_calender, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
   resources :expenses
   # The priority is based upon order of creation:
   # first created -> highest priority.
 #  map.namespace :user do |user|
 #    user.root :controller => 'users' # creates user_root_path
 #  end
-  
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
@@ -64,3 +64,4 @@ SalCalNew::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+
